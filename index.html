@@ -67,7 +67,7 @@ a{color:var(--blue)}
   <p class="lede">Canada, Manitoba and Saskatchewan are investing $262.5M to reopen the Churchill trade corridor. Under its 2,327&nbsp;km shipping
   route, only 17% of the seabed has a published sounding &mdash; CHS reports 15.8% of Canadian Arctic waters adequately surveyed &mdash; and in 2016 its own hydrographers put full Arctic charting
   &ldquo;more than a decade&rdquo; away. A decade has passed. This atlas completes the rest by model: depth and uncertainty for
-  every kilometre, with the provenance of every pixel kept honest &mdash; and tested on water it had never seen: trained only on soundings from before 2016, it predicted the 6.5&nbsp;million soundings CHS has collected since to within 13.5&nbsp;m, 25% better than the gravity-derived bathymetry every global chart falls back on.</p>
+  every kilometre, with the provenance of every pixel kept honest &mdash; and tested on water it had never seen: trained only on soundings from before 2016, it predicted the 6.5&nbsp;million soundings CHS has collected since to within 13.3&nbsp;m, 26% better than the gravity-derived bathymetry every global chart falls back on.</p>
   <div class="statrow">
     <div class="stat"><b>2,327 km</b><span>Churchill &rarr; Atlantic route</span></div>
     <div class="stat blue"><b>17%</b><span>published soundings under keel</span></div>
@@ -108,8 +108,8 @@ a{color:var(--blue)}
   <div class="claims">
     <div class="claim"><span class="num">4.9 m</span><h3>Test 1 &mdash; research-cruise multibeam</h3>
       <p>109,044 seabed cells on the shelf (50&ndash;400 m) measured by Amundsen, Healy, Knorr, Armstrong and Merian cruises (via GMRT/NCEI) where CHS has no published sounding. The model&rsquo;s mean error, against <b>13.4 m</b> for copying the nearest published sounding and <b>5.5 m</b> for the gravity prior.</p></div>
-    <div class="claim"><span class="num">13.5 m</span><h3>Test 2 &mdash; the future, hindcast</h3>
-      <p>CHS&rsquo;s own Survey Index dates every sounding to 2016. We retrained on the pre-2016 soundings only and scored the 6,460,612 corridor soundings CHS published after. Model 13.5 m &middot; nearest old sounding <b>18.8 m</b> &middot; gravity <b>18.1 m</b>. 72% of errors inside the model&rsquo;s own 1&sigma;.</p></div>
+    <div class="claim"><span class="num">13.3 m</span><h3>Test 2 &mdash; the future, hindcast</h3>
+      <p>CHS&rsquo;s own Survey Index dates every sounding to 2016. We retrained on the pre-2016 soundings only and scored the 6,460,612 corridor soundings CHS published after. Model 13.3 m &middot; nearest old sounding <b>18.8 m</b> &middot; gravity <b>18.1 m</b>. 72% of errors inside the model&rsquo;s own 1&sigma;.</p></div>
     <div class="claim"><span class="num">48% &rarr; 68%</span><h3>&sigma; recalibrated on independent cells</h3>
       <p>Raw &sigma; was under-confident: only 48% of independent errors fell inside 1&sigma; (68% expected). An isotonic map fitted on Test 1 fixes the scale (mean factor 1.9&times;); every &sigma; on this page is the calibrated one. Ranking was already right (&sigma; vs |error| correlation 0.30).</p></div>
     <div class="claim"><span class="num">&gt; 400 m</span><h3>Where the model defers</h3>
@@ -118,9 +118,9 @@ a{color:var(--blue)}
   <div class="tblwrap"><table>
     <thead><tr><th>Distance to nearest sounding</th><th>SeabedNet (m)</th><th>Nearest sounding (m)</th><th>Gravity prior (m)</th></tr></thead>
     <tbody><tr><td colspan="4" style="color:var(--muted);font-family:var(--mono);font-size:11px;letter-spacing:.1em">TEST 1 &middot; INDEPENDENT MULTIBEAM, SHELF 50&ndash;400 M</td></tr><tr><td>0&ndash;0.5 km</td><td>4.8</td><td>8.5</td><td>5.9</td></tr><tr><td>0.5&ndash;1 km</td><td>4.6</td><td>12.9</td><td>5.5</td></tr><tr><td>1&ndash;2 km</td><td>5.0</td><td>17.5</td><td>4.8</td></tr><tr><td>2&ndash;4 km</td><td>5.5</td><td>20.8</td><td>5.8</td></tr>
-    <tr><td colspan="4" style="color:var(--muted);font-family:var(--mono);font-size:11px;letter-spacing:.1em">TEST 2 &middot; PRE-2016 MODEL vs POST-2016 CHS SOUNDINGS, CORRIDOR</td></tr><tr><td>0&ndash;0.5 km</td><td>8.1</td><td>5.6</td><td>17.8</td></tr><tr><td>0.5&ndash;1 km</td><td>11.6</td><td>11.8</td><td>17.9</td></tr><tr><td>1&ndash;2 km</td><td>13.4</td><td>17.1</td><td>17.5</td></tr><tr><td>2&ndash;4 km</td><td>15.6</td><td>25.4</td><td>18.2</td></tr><tr><td>4&ndash;8 km</td><td>19.2</td><td>34.9</td><td>20.7</td></tr></tbody>
+    <tr><td colspan="4" style="color:var(--muted);font-family:var(--mono);font-size:11px;letter-spacing:.1em">TEST 2 &middot; PRE-2016 MODEL vs POST-2016 CHS SOUNDINGS, CORRIDOR</td></tr><tr><td>0&ndash;0.5 km</td><td>7.1</td><td>5.6</td><td>17.8</td></tr><tr><td>0.5&ndash;1 km</td><td>10.8</td><td>11.8</td><td>17.9</td></tr><tr><td>1&ndash;2 km</td><td>13.1</td><td>17.1</td><td>17.5</td></tr><tr><td>2&ndash;4 km</td><td>15.8</td><td>25.4</td><td>18.2</td></tr><tr><td>4&ndash;8 km</td><td>20.8</td><td>34.9</td><td>20.7</td></tr></tbody>
   </table></div>
-  <p class="lede" style="font-size:14.5px"><b style="color:var(--text)">What the tests do not support.</b> Under 50 m of water the pre-2016 model reads 12&ndash;14 m <em>too deep</em> &mdash; the dangerous direction, and the reason the mean depth is the wrong target for navigation (see the hazard exhibit). Within 500 m of an old sounding, copying that sounding still beats the model (5.6 vs 8.1 m); the model earns its keep beyond that. Test 2 used a 6.8M-parameter model trained in 3.7 hours; the full-size run is in progress and will replace these numbers, better or worse. Coastal cells under 50 m in Test 1 disagree with every source including CHS&rsquo;s own nearest sounding and are excluded pending a look at the GMRT coastline product.</p>
+  <p class="lede" style="font-size:14.5px"><b style="color:var(--text)">What the tests do not support.</b> Under 50 m of water the pre-2016 model reads 9&ndash;6 m <em>too deep</em> &mdash; the dangerous direction, and the reason the mean depth is the wrong target for navigation (see the hazard exhibit). Within 500 m of an old sounding, copying that sounding still beats the model (5.6 vs 7.1 m); the model earns its keep beyond that. Test 2 is the full-size (34.8M-parameter) model, trained 17 minutes on a rented RTX 5090; the 6.8M model scored 13.5 m on the same test, so size is not what limits this. Coastal cells under 50 m in Test 1 disagree with every source including CHS&rsquo;s own nearest sounding and are excluded pending a look at the GMRT coastline product.</p>
 </section>
 
 <section>
@@ -220,8 +220,8 @@ a{color:var(--blue)}
   <div class="claims">
     <div class="claim"><span class="num">4.9 m vs 13.4 m</span><h3>Independent multibeam, shelf water</h3>
       <p>Model vs nearest published sounding on 109,044 research-cruise cells CHS never published. Gravity prior: 5.5 m. The model&rsquo;s advantage over gravity on this set is small, because cruises run where gravity already works; Test 2 is the shelf test.</p></div>
-    <div class="claim"><span class="num">13.5 m vs 18.1 m</span><h3>Pre-2016 model, post-2016 soundings</h3>
-      <p>6,460,612 corridor soundings CHS collected after its Survey Index closes, predicted by a model that never saw them. Nearest old sounding: 18.8 m. The gap widens with distance: 15.6 vs 25.4 m at 2&ndash;4 km.</p></div>
+    <div class="claim"><span class="num">13.3 m vs 18.1 m</span><h3>Pre-2016 model, post-2016 soundings</h3>
+      <p>6,460,612 corridor soundings CHS collected after its Survey Index closes, predicted by a model that never saw them. Nearest old sounding: 18.8 m. The gap widens with distance: 15.8 vs 25.4 m at 2&ndash;4 km.</p></div>
     <div class="claim"><span class="num">68% / 95%</span><h3>Calibrated bands</h3>
       <p>Share of independent errors inside the published 68% and 95% bands after isotonic recalibration. Rank correlation of &sigma; with error was 0.30 before, unchanged after.</p></div>
     <div class="claim"><span class="num">&le; 6 km &middot; &gt; 400 m</span><h3>Provenance and deferral</h3>
